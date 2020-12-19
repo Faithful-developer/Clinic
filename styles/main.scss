@@ -1,0 +1,11 @@
+@import "./normalize";
+@import "./variables";
+@import "./mixin";
+
+h1{
+    position: relative;
+    @include textMix(25px, san-serif, center, 800, $blue, 5px);
+    &::before{
+        @include beforeMix(url(../images/icons/pet.svg), 24px, 24px, 0, auto, 0, 0, absolute)
+    }
+}

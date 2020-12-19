@@ -1,0 +1,22 @@
+@mixin textMix($fontsize, $ffamiliy, $textalign , $fweight, $color, $letspacing) {
+    font-size: $fontsize;
+    font-family: $ffamiliy;
+    font-weight: $fweight;
+    color: $color;
+    text-align: $textalign;
+    letter-spacing: $letspacing;
+}
+
+@mixin beforeMix($bgImg, $width, $height, $left, $right, $top, $bottom, $position) {
+    content: " ";
+    position: $position;
+    background-image: $bgImg;
+    // background-size: $bgsize;
+    left: $left;
+    right: $right;
+    top: $top;
+    width: $width;
+    height: $height;
+    bottom: $bottom;
+    // background-position: $bgPos;
+}
